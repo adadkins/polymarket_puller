@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  polymarket_puller:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - PG_USER=user
+      - PG_DB=db
+      - PG_PASSWORD=password
+      - PG_HOST=host
+      - PG_SCHEMA=shcema
+      - BASE_URL=url
+
